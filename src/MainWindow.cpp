@@ -20,7 +20,7 @@ void MainWindow::setUI()
 {
     setWindowTitle("Qt Trenning");
     resize(360, 550);
-    setStyleSheet("background-color: #f3f3f3;");       // Светло-серый фон (как на iOS)
+    setStyleSheet("background-color: #f3f3f3;");       
 
     
     QWidget* centralWidget = new QWidget(this);
@@ -29,20 +29,20 @@ void MainWindow::setUI()
 
     centralWidget->setLayout(m_mainLayout);
 
-    m_mainLayout->setSpacing(10);          // Расстояние между кнопками
-    m_mainLayout->setContentsMargins(15, 15, 15, 15); // Отступы от краев окна
+    m_mainLayout->setSpacing(10);          
+    m_mainLayout->setContentsMargins(15, 15, 15, 15); 
 
 
     QLineEdit* lineEdit = new QLineEdit();
 
-    lineEdit->setAlignment(Qt::AlignRight);    // Выравнивание текста в право
+    lineEdit->setAlignment(Qt::AlignRight);    
     lineEdit->setReadOnly(true);
     lineEdit->setStyleSheet(
     "font-size: 40px;"
     "font-family: Arial;"
     "border: none;"
     "background: transparent;"
-    "color: #202020;" // Почти черный цвет
+    "color: #202020;" 
     ); 
 
 
@@ -113,8 +113,8 @@ void MainWindow::setUI()
     QPushButton* clear = new QPushButton("C");
 
     ravno->setStyleSheet(
-    "background-color: #ff9f43;" // Оранжевый
-    "color: white;"              // Белый текст
+    "background-color: #ff9f43;" 
+    "color: white;"              
     "border: none;"
     "border-radius: 10px;"
     "font-weight: bold;"
@@ -220,23 +220,23 @@ void MainWindow::setUI()
 
 
     this->setStyleSheet(
-    "QWidget { background-color: #f3f3f3; }" // Фон окна
+    "QWidget { background-color: #f3f3f3; }" 
     
     "QPushButton {"
-    "   background-color: #ffffff;"      // Белые кнопки
-    "   border: 1px solid #dcdcdc;"      // Тонкая серая рамка
-    "   border-radius: 10px;"            // Закругленные углы (как на фото)
-    "   font-size: 20px;"                // Размер цифр
-    "   color: #333333;"                 // Цвет цифр
-    "   min-width: 60px;"                // Минимальная ширина
-    "   min-height: 60px;"               // Минимальная высота (чтобы были квадратными)
+    "   background-color: #ffffff;"      
+    "   border: 1px solid #dcdcdc;"      
+    "   border-radius: 10px;"            
+    "   font-size: 20px;"                
+    "   color: #333333;"                 
+    "   min-width: 60px;"                
+    "   min-height: 60px;"               
     "}"
     
-    "QPushButton:hover {"                // Когда наводим мышку
+    "QPushButton:hover {"                
     "   background-color: #eaeaea;"
     "}"
     
-    "QPushButton:pressed {"              // Когда нажали
+    "QPushButton:pressed {"             
     "   background-color: #d0d0d0;"
     "}"
     );
